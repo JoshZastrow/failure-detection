@@ -270,8 +270,11 @@ class Model(FlowSpec):
 
         self.output.loc[self.X_serve.index, 'predictions'] = y_pred
         
+        self.dest_path = f'./data/serve_predictions_{current.run_id}.csv'
+
+        print(f'Output predictions dumped to {self.dest_path}')
         self.output.to_csv(
-            f'./data/serve_predictions_{current.run_id}.csv', 
+            self.dest_path, 
             index=True, 
             index_label='index')
 
