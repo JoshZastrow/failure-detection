@@ -12,30 +12,40 @@ Please make sure you have the following installed on your computer:
 
 ### clone repo
 
+``` $ git clone https://github.com/JoshZastrow/failure-detection.git```
+
 ### create environment
 
 Navigate to inside the project repo
->>> cd predictive_maintenance
+
+```$ cd failure-detection```
 
 Create a virtual environment named "venv"
->>> virtualenv venv
+
+```$ virtualenv venv```
 
 Startup the environment
->>> source venv/bin/activate
+
+```$ source venv/bin/activate```
 
 Install the required packages into this environemnt
->>> pip install -r requirements.txt
+
+```$ pip install -r requirements.txt```
 
 ### display pipeline
->>> python3 pipeline.py show
+
+```$ python3 pipeline.py show```
 
 ### run training pipeline
->>> python3 pipeline.py run
+
+```$ python3 pipeline.py run```
 
 ### serving predictions
->>> python3 pipeline.py run --mode serve --fpath ./data/<table_name>.csv
+
+```$ python3 pipeline.py run --mode serve --fpath ./data/<table_name>.csv```
 
 ### viewing notebook
-You can open up the html version of the notebook by clicking on index.html.
+You can open up the html version of the notebook by clicking on index.html and opening it in your web browser.
 Alternatively you can spin up a jupter server and open the ipnyb directly.
->>> jupyter lab
+
+```$ jupyter lab```
