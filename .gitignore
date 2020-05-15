@@ -1,2 +1,5 @@
 venv
 .metaflow
+.ipynb_checkpoints
+.vscode
+.DS_Store
