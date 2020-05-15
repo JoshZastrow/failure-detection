@@ -1,0 +1,7 @@
+metaflow
+sspipe 
+pandas
+seaborn
+sklearn
+jupyterlab
+numpy
