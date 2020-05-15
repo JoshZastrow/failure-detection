@@ -40,12 +40,20 @@ Install the required packages into this environemnt
 
 ```$ python3 pipeline.py run```
 
-### serving predictions
-
-```$ python3 pipeline.py run --mode serve --fpath ./data/<table_name>.csv```
-
 ### viewing notebook
 You can open up the html version of the notebook by clicking on index.html and opening it in your web browser.
 Alternatively you can spin up a jupter server and open the ipnyb directly.
 
 ```$ jupyter lab```
+
+
+### serving predictions
+If you have your own dataset that you would like to create predictions for, set the mode argument of the pipeline to serve and provide the filepath to your dataset. The pipeline only works with .csv's.
+
+```$ python3 pipeline.py run --mode serve --fpath ./data/<table_name>.csv```
+
+For more information on the available arguments, run
+
+```$ python3 pipeline.py run --help```
+
+
